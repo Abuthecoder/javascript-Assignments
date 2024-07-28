@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="one">
+        <h1>Interactive Quiz Program</h1>
+        <P>How is the Developer of Gta games</P>
+        <input type="radio" name="one">Ubisoft
+        <input type="radio" name="one" id="correct1">Rockstar games
+        <input type="radio" name="one">EA sports
+        <p>Abbrevation of GPU</p>
+        <input type="radio" name="two">gram per unit
+        <input type="radio" name="two">gram process unit
+        <input type="radio" name="two" id="correct2">graphical processing unit
+        <p>Which is the highest Profitable PC game</p>
+        <input type="radio" name="three">GTA V
+        <input type="radio" name="three" id="correct3">Minecraft
+        <input type="radio" name="three">Red Dead Redenption II
+        <p>Who is the CEO of Rockstar Games</p>
+        <input type="radio" name="four">Sundar Pichai
+        <input type="radio" name="four">Jeff Bezos
+        <input type="radio" name="four" id="correct4">Sam Houser
+        <p>Heart of computer is </p>
+        <input type="radio" name="five" id="correct5">CPU
+        <input type="radio" name="five">RAM
+        <input type="radio" name="five">SSD<br><br>
+        <button type="submit" name="submit" onclick="score()">submit</button>
+    </div>
+    <script>
+        function score(){
+            var score=0;
+            if(document.getElementById("correct1").checked){
+                score++;
+            }
+            if(document.getElementById("correct2").checked){
+                score++;
+            }
+            if(document.getElementById("correct3").checked){
+                score++;
+            }
+            if(document.getElementById("correct4").checked){
+                score++;
+            }
+            if(document.getElementById("correct5").checked){
+                score++;
+            }
+            alert("score:"+score);
+        }
+    </script>
+</body>
+
+</html>

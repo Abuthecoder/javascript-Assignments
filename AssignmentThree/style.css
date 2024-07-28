@@ -1,0 +1,23 @@
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.image{
+    width: 200px;
+    height: 200px;
+}
+h1{
+    text-align: center;
+}
+.fullscreen{
+    z-index: 999;
+    cursor: zoom-out;
+    display: block;
+    width: 400px;
+    max-width: 400px;
+    height: 600px;
+    position: fixed;
+    left: 100px;
+    top: 30px;
+}

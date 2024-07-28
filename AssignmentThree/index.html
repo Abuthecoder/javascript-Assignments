@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>image Gallery</h1>
+    <div class="gallery" onclick="zoomout(this)">
+        <img src="./images/products/f1.jpg" alt="" class="image" id="img1" onclick="zoom(this)">
+        <img src="./images/products/f2.jpg" alt="" class="image" id="img2" onclick="zoom(this)">
+        <img src="./images/products/f3.jpg" alt="" class="image" id="img3" onclick="zoom(this)">
+        <img src="./images/products/f4.jpg" alt="" class="image" id="img4" onclick="zoom(this)">
+        <img src="./images/products/f5.jpg" alt="" class="image" id="img5" onclick="zoom(this)">
+    </div>
+    <script>
+        function zoom(element){
+            element.classList.toggle("fullscreen")
+        }
+        function zoomout(element){
+            element.remove.classList("fullscreen")
+        }
+    </script>
+</body>
+</html>
